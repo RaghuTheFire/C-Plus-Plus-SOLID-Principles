@@ -9,3 +9,25 @@ Here's an explanation of the code:
 5. **Dependency Inversion Principle (DIP)**: The `MessageSender` interface defines the `SendMessage()` method. The `EmailSender` and `SMSSender` classes implement this interface. The `NotificationService` class depends on the `MessageSender` interface, not on the concrete implementations (`EmailSender` and `SMSSender`). This design follows the Dependency Inversion Principle, making it easier to swap out the message sending implementation without modifying the `NotificationService` class.
   
 In the `main()` function, the code demonstrates the usage of these principles: - It creates instances of `Rectangle` and `Circle`, and calculates their areas using the `Area()` method defined in the `Shape` class. - It creates instances of `Dog` and `Cat`, and calls the `MakeSound()` method on each animal. - It creates instances of `TextDocument` and `ImageDocument`, and calls the `Open()` and `Close()` methods on each document. - It creates instances of `NotificationService` with `EmailSender` and `SMSSender`, and sends notifications using the `SendNotification()` method. Overall, this code showcases how the SOLID principles can be applied to create a more modular, extensible, and maintainable software design.
+
+
+
+# What happens if we don't use SOLID?
+1. Tight coupling occurs
+2. Duplication of code
+3. Unknown issues in application development lifecycle
+4. requires time to do modification in code
+5. code not testable
+
+# Why use SOLID?
+1. reduces complexity of code.
+2. reusability
+3. reduces error
+4. increase readability, extensibility
+5. better testability
+6. reduces tight coupling
+
+# Solution to successful development of application depends on?
+1. Architecture (e.g MVC)
+2. Design Principles (e.g SOLID)
+3. Design Patterns (e.g Singleton)
